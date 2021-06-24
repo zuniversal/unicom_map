@@ -1,0 +1,33 @@
+.container {
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    z-index: 1000;
+
+    .inner {
+        margin-left: -100px;
+        width: 100px;
+        height: 20px;
+        position: relative;
+
+        .bar {
+            width: 160px;
+            height: 20px;
+            background-color: #fff;
+            background-image: linear-gradient(to right, rgba(215, 228, 255, 0.9), rgba(51, 119, 255, 0.9));
+            margin-left: 20px;
+        }
+
+        .text1 {
+            position: absolute;
+            text-shadow: 0 0 1px rgba(255, 255, 255, .5);
+        }
+
+        .text2 {
+            position: absolute;
+            right: -100px;
+            top: 0;
+            text-shadow: 0 0 1px rgba(255, 255, 255, .5);
+        }
+    }
+}

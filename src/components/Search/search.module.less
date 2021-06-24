@@ -1,0 +1,49 @@
+.searchBorder {
+    display: flex;
+    align-items: center;
+    border: 1px solid #699bff;
+    padding: 0 12px;
+    height: 32px;
+    border-radius: 32px;
+}
+
+//分割线
+.dividerInput {
+    border: 1px;
+    border-color: #83a4d7;
+    border-style: dashed;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+//导航栏右侧输入框
+.searchInput {
+    width: 100px;
+    color: #fff;
+
+    :global {
+        .ant-select-selector {
+            padding: 0 !important;
+            border: none !important;
+            background-color: transparent !important;
+        }
+
+        .ant-select-selection-search {
+            left: 0 !important;
+        }
+    }
+}
+
+.dropdown {
+    max-width: 800px;
+}
+
+.serviceSelect {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1410px) {
+    .divider {
+        margin: 0 10px;
+    }
+}

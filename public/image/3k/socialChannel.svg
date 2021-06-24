@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="52px" viewBox="0 0 53 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>渠道-联通社会渠道</title>
+    <g id="图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="渠道-联通社会渠道" transform="translate(1.000000, 0.000000)">
+            <circle id="椭圆形" fill="#FFFFFF" cx="26" cy="26" r="25"></circle>
+            <path d="M26,0 C40.3594035,0 52,11.6405965 52,26 C52,40.3594035 40.3594035,52 26,52 C11.6405965,52 0,40.3594035 0,26 C0,11.6405965 11.6405965,0 26,0 Z M26,2 C12.745166,2 2,12.745166 2,26 C2,39.254834 12.745166,50 26,50 C39.254834,50 50,39.254834 50,26 C50,12.745166 39.254834,2 26,2 Z" id="椭圆形" fill="#D81E06" fill-rule="nonzero"></path>
+            <path d="M32.5,9.75 L27.625,16.25 L35.75,37.375 L26,47.125 L16.25,37.375 L24.375,16.25 L19.5,9.75 L32.5,9.75 Z M30.875,16.25 L37.375,24.375 L35.75,29.25 L30.875,16.25 Z" id="形状结合" fill="#D81E06" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,95 @@
+{
+  "name": "unicom-fe",
+  "version": "0.1.0",
+  "homepage": "/nrvp",
+  "private": true,
+  "scripts": {
+    "start": "craco start",
+    "build": "craco --max_old_space_size=4096 build",
+    "test": "craco test",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "lint:style": " stylelint \"src/**/*.less\" --syntax less",
+    "lint:js": "eslint --ext .js,.jsx ./src",
+    "lint:style:fix": "stylelint --fix \"src/**/*.less\" --syntax less",
+    "lint:js:fix": "eslint --fix --ext .js,.jsx ./src",
+    "lint:fix": "npm run lint:style:fix && npm run lint:js:fix"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "npm run lint:js",
+    "*.{css,less,scss,styl}": "npm run lint:style"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.5.0",
+    "@ant-design/pro-form": "^1.24.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@turf/center": "^6.3.0",
+    "@turf/centroid": "^6.3.0",
+    "antd": "^4.15.0",
+    "antd-mobile": "^2.3.4",
+    "craco-less": "^1.17.1",
+    "echarts": "^5.1.1",
+    "echarts-for-react": "^3.0.1",
+    "js-file-download": "^0.4.12",
+    "lodash": "^4.17.21",
+    "mapvgl": "^1.0.0-beta.124",
+    "moment": "^2.29.1",
+    "npm": "^7.7.5",
+    "numeral": "^2.0.6",
+    "react": "^17.0.1",
+    "react-bmapgl": "^0.1.19",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.2",
+    "react-virtualized": "^9.22.3",
+    "web-vitals": "^1.0.1",
+    "wkt": "^0.1.1"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.13.8",
+    "@babel/plugin-proposal-decorators": "^7.13.5",
+    "@craco/craco": "^6.1.2",
+    "@ecomfe/eslint-config": "^4.0.0",
+    "@ecomfe/stylelint-config": "^1.0.0",
+    "@reduxjs/toolkit": "^1.5.0",
+    "@storybook/addon-actions": "^6.1.18",
+    "@storybook/addon-essentials": "^6.1.20",
+    "@storybook/addon-links": "^6.1.18",
+    "@storybook/node-logger": "^6.1.18",
+    "@storybook/preset-create-react-app": "^3.1.6",
+    "@storybook/react": "^6.1.20",
+    "axios": "^0.21.1",
+    "babel-eslint": "^10.0.0",
+    "babel-plugin-import": "^1.13.3",
+    "eslint": "^7.28.0",
+    "eslint-plugin-babel": "^5.0.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.0.0",
+    "lint-staged": "^10.0.0",
+    "qs": "^6.10.1",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-redux": "^7.2.2",
+    "stylelint": "^13.0.0",
+    "webpack-api-mocker": "^1.7.6"
+  }
+}

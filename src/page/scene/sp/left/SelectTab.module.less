@@ -1,0 +1,41 @@
+.container {
+    :global {
+        .ant-tabs {
+            overflow: visible !important;
+        }
+
+        .ant-tabs-nav {
+            // position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            width: 100%;
+            padding-left: 16px;
+            box-shadow: 0 2px 16px 0 rgba(16, 54, 113, .16);
+            // pointer-events: auto;
+        }
+
+        .ant-tabs-tab {
+            width: 60px;
+            margin-right: 10px;
+            .anticon {
+                margin-left: 8px;
+            }
+        }
+
+        .ant-tabs-content-holder {
+            // position: absolute;
+            // bottom: 0;
+            top: 50px;
+            overflow-y: auto;
+            box-shadow: 0 2px 16px 0 rgba(16, 54, 113, .16);
+            // pointer-events: none;
+        }
+    }
+}
+
+.tabPaneContanier {
+    // margin-top: 30px;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(16, 54, 113, .16);
+}

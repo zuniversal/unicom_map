@@ -1,0 +1,462 @@
+@import './common.less';
+//导航栏样式
+.header {
+    background-color: @app-background-color;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.headerD {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    :global {
+        .ant-menu-horizontal,
+        .ant-menu-submenu-open,
+        .ant-menu-submenu-active {
+            background: transparent !important;
+            color: #fff;
+
+            &:hover {
+                .ant-menu-submenu-title {
+                    color: rgba(255, 255, 255, .9) !important;
+                }
+            }
+
+            .ant-menu-submenu-title,
+            .ant-menu-submenu {
+                color: rgba(255, 255, 255, 1) !important;
+
+                &:hover {
+                    color: rgba(255, 255, 255, .9) !important;
+                }
+            }
+
+            .ant-menu-submenu-arrow {
+                display: block;
+                color: transparent;
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                right: -10px;
+                transform: translateY(-2px);
+
+                &:hover {
+                    color: transparent;
+                }
+
+                &::after {
+                    content: ' ';
+                    transform: none;
+                    border: solid 5px #fff;
+                    border-left-color: transparent;
+                    border-bottom-color: transparent;
+                    border-right-color: transparent;
+                    border-radius: 0;
+                }
+            }
+
+            .ant-menu-submenu-horizontal {
+                margin: 0 !important;
+                padding: 0 24px 0 16px;
+            }
+
+            .ant-menu-submenu-selected {
+                background-color: rgba(255, 255, 255, .1) !important;
+            }
+        }
+    }
+}
+
+.mainMenuOverlay {
+    :global {
+        .ant-dropdown-menu-submenu-title {
+            padding: 8px 16px;
+            min-width: 120px;
+        }
+    }
+}
+
+.subMenuOverlay {
+    :global {
+        .ant-dropdown-menu-item {
+            padding: 8px 16px;
+        }
+    }
+}
+//导航栏logo样式
+.logo {
+    display: inline-block;
+    padding-right: 10px;
+}
+// 导航下拉菜单样式
+.menuLink {
+    font-size: 15px;
+    margin: 5px;
+    text-align: center;
+}
+//导航栏“可视化系统”
+.headTitle {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bolder;
+}
+//导航栏 场景选择
+.sceneSelector {
+    cursor: pointer;
+    font-size: 18px;
+    // font-weight: bold;
+    text-align: center;
+}
+//分割线
+.divider {
+    border: 1px;
+    border-color: #83a4d7;
+    border-style: dashed;
+    margin: 0 20px;
+    height: 16px;
+}
+//分割线
+.dividerInput {
+    border: 1px;
+    border-color: #83a4d7;
+    border-style: dashed;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+//导航栏右侧块
+.headRight {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 16px;
+    top: 0;
+    height: 60px;
+
+    .rightItem {
+        display: inline-block;
+    }
+}
+
+.input {
+    width: 100px;
+    background-color: #3676fe;
+    border: 0;
+    padding: 0;
+    color: #fff;
+    vertical-align: middle;
+}
+
+//右侧展示用户信息
+.table {
+    margin-left: 10px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 120px;
+}
+
+.userInfoBtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 60px;
+    padding: 0 8px;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, .1);
+    }
+}
+
+.userInfo {
+    max-width: 150px;
+    text-align: center;
+    display: inline-block;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-left: 8px;
+
+    >span {
+        max-width: 150px;
+        display: inline-block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+.operate {
+    padding: 0 8px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 100);
+
+    &:hover {
+        color: rgba(255, 255, 255, 100);
+    }
+}
+//右侧工具箱样式
+.toolkit {
+    border-color: #699bff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.citySelect {
+    display: flex;
+    align-items: center;
+    border: 1px solid #699bff;
+    border-radius: 32px;
+    height: 32px;
+    padding: 0 5px 0 14px;
+
+    :global {
+        .ant-cascader-picker-label {
+            padding: 0;
+        }
+    }
+}
+
+.serviceSelect {
+    font-size: 14px;
+    // color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+}
+
+.backBtn {
+    cursor: pointer;
+}
+
+//级联选择框 导航栏位置选择
+.location {
+    background-color: #3676fe;
+
+    :global {
+        .ant-input {
+            border: 0;
+            padding: 0;
+        }
+
+        .ant-cascader-picker-clear {
+            background-color: #3676fe;
+            color: white;
+        }
+
+        .ant-cascader-picker-arrow {
+            color: #fff;
+        }
+    }
+
+    color: white;
+}
+
+.headRightMobile {
+    display: none;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 60px;
+
+    .menuItemMobile {
+        height: 60px;
+        padding: 8px 16px;
+    }
+
+    .menuBtnMobile {
+        font-size: 24px;
+    }
+}
+
+.menuDrawerMobile {
+    :global(.ant-drawer-body) {
+        padding: 16px 0;
+    }
+}
+
+.menuGroupMobile {
+    opacity: .6;
+    padding: 8px 16px;
+    border-bottom: solid 1px #ccc;
+}
+
+.searchContainerMoblie {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: @app-background-color;
+    padding: 16px;
+    display: none;
+
+    .searchCloseMobile {
+        position: absolute;
+        right: 16px;
+        padding: 2px 8px;
+        top: 0;
+    }
+
+    &.searchContainerMoblieOpen {
+        animation: fadeInDown ease .3s;
+    }
+}
+
+.citySelectMobileBtn {
+    display: none;
+}
+
+@keyframes fadeInDown {
+    0% {
+        top: -60px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+// // 480
+// @media screen and (max-width: @screen-xs) {
+
+// }
+// // 576
+// @media screen and (max-width: @screen-xs-max) {
+
+// }
+// 768
+@media screen and (max-width: @screen-sm-max) {
+    .sceneSelector {
+        display: none;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .citySelect {
+        display: none;
+    }
+
+    .headRight {
+        display: none;
+    }
+
+    .headRightMobile {
+        display: flex;
+    }
+
+    .searchContainerMoblieOpen {
+        display: block;
+    }
+
+    .citySelectMobileBtn {
+        display: block;
+    }
+    // .headRight {
+    //     // display: none;
+    //     position: fixed;
+    //     background: @app-background-color;
+    //     height: auto;
+    //     top: 60px;
+    //     right: 0;
+    //     bottom: 0;
+    //     width: 280px;
+    //     z-index: 10;
+    //     .rightItem {
+    //         display: block;
+    //     }
+    // }
+}
+// 992
+@media screen and (max-width: @screen-md-max) {
+    .toolkit {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+// 1200
+@media screen and (max-width: @screen-lg-max) {
+    .headTitle {
+        display: none;
+
+        +.divider {
+            display: none;
+        }
+    }
+}
+// 1600
+@media screen and (max-width: @screen-xl-max) {
+    //导航栏 场景选择
+    .sceneSelector {
+        font-size: 15px;
+    }
+
+    .divider {
+        margin: 0 12px;
+    }
+
+    .headTitle {
+        font-size: 16px;
+    }
+
+    .location {
+        // width: 100px;
+    }
+
+    .backText {
+        display: none;
+    }
+}
+// 480-575
+// @media screen and (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
+
+// }
+// // 576-767
+// @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+// }
+
+// // 768-991
+// @media screen and (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+
+// }
+
+// 992-1199
+@media screen and (min-width: @screen-lg-min) and (max-width: @screen-lg-max) {
+    //右侧工具箱样式
+    // .toolkit {
+    //     border-color: #699bff;
+    //     margin-left: 10px;
+    //     margin-right: 10px;
+    // }
+}
+
+// 1200-1600
+@media screen and (min-width: @screen-xl-min) and (max-width: @screen-xl-max) {
+    // .sceneSelector {
+    //     font-size: 15px;
+    // }
+
+    // .divider {
+    //     margin: 0 12px;
+    // }
+
+    // .location {
+    //     width: 100px;
+    // }
+
+    // .toolkit {
+    //     border-color: #699bff;
+    //     margin-left: 10px;
+    //     margin-right: 10px;
+    // }
+}

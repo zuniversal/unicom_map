@@ -1,0 +1,104 @@
+@import '../common/common.less';
+
+.head {
+    width: 100%;
+    padding-left: 17.1%;
+    padding-top: 6%;
+    padding-bottom: 3.3%;
+}
+
+.icon {
+    width: 80px;
+    height: 60px;
+    margin-right: 15px;
+    margin-top: -10px;
+    padding-top: -10px;
+}
+
+.titleText {
+    color: rgba(51, 51, 51, 100);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: @screen-md-min) {
+    #root {
+        overflow: hidden;
+    }
+
+    .head {
+        padding-left: 0;
+    }
+
+    .icon {
+        width: 50px;
+        margin: 0 15px 10px 10px;
+    }
+
+    .titleText {
+        font-size: 20px;
+    }
+
+    .loginText {
+        display: none;
+    }
+
+    .loginWindow {
+        width: 80% !important;
+        margin: 0 10%;
+    }
+}
+
+.loginBody {
+    background-color: #3376ff;
+    width: 100%;
+    height: 500px;
+    border: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        margin-right: 150px;
+    }
+}
+
+.loginWindow {
+    background-color: #fff;
+    border-radius: 2%;
+    // box-shadow: #3376ff;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
+
+.loginTextH {
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+}
+
+.loginTextP {
+    margin-top: 30px;
+    text-align: center;
+    color: #cdd9ebc0;
+    font-size: 20px;
+}
+
+.divideLine {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.img {
+    // margin-top: 100px;
+    height: 100px;
+    width: 400px;
+}
+
+.carousel {
+    margin-top: 60%;
+    height: 100px;
+    width: 400px;
+}

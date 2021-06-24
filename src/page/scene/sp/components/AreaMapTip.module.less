@@ -1,0 +1,50 @@
+.tipContainer {
+    position: relative;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 177px;
+    height: 75px;
+    padding: 12px 16px;
+    border-radius: 2px;
+
+    .positionWrap {
+        display: flex;
+        align-items: center;
+        color: rgba(51, 118, 255, 100);
+        font-weight: bold;
+
+        .cityText {
+            margin-left: 5px;
+        }
+    }
+
+    .valueWrap {
+        font-size: 12px;
+
+        .nameText {
+            color: rgba(153, 153, 153, 100);
+        }
+
+        .valueText {
+            font-weight: bold;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+    }
+
+    .arrow {
+        background-color: #fff;
+        content: "";
+        display: block;
+        height: 5px;
+        margin: auto;
+        pointer-events: auto;
+        position: absolute;
+        bottom: -9px;
+        left: 50%;
+        width: 5px;
+        transform: translateY(-6.53553391px) rotate(45deg);
+    }
+}
